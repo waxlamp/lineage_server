@@ -20,9 +20,9 @@ app = Namespace(__name__)
 _log = logging.getLogger(__name__)
 
 
-gdbPath = GraphDatabase("http://neo4j_path:7474")
-gdbGot = GraphDatabase("http://neo4j_got:7474")
-gdbCoauth = GraphDatabase("http://neo4j_dblp:7474")
+gdbPath = GraphDatabase("http://localhost:7474", username="neo4j", password="letmein")
+gdbGot = GraphDatabase("http://localhost:7474", username="neo4j", password="letmein")
+gdbCoauth = GraphDatabase("http://localhost:7474", username="neo4j", password="letmein")
 
 
 @app.route('/', methods=['GET'])
